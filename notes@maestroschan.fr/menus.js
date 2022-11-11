@@ -17,16 +17,18 @@ const Gettext = imports.gettext.domain('notes-extension');
 const _ = Gettext.gettext;
 
 const PRESET_COLORS = {
-	'red': [200, 0, 0],
-	'green': [0, 150, 0],
-	'blue': [0, 0, 180],
+	'red': [255, 118, 117],
+	'orange': [250, 177, 160],
+	'green': [85, 239, 196],
+	'blue': [116, 185, 255],
+	
+	'pink': [253, 121, 168],
+	'purple': [162, 155, 254],
+	'yellow': [255, 234, 167],
+	'cyan': [129, 236, 236],
 
-	'magenta': [255, 50, 255],
-	'yellow': [255, 255, 50],
-	'cyan': [0, 255, 255],
-
-	'white': [255, 255, 255],
-	'black': [50, 50, 50]
+	'white': [236, 240, 241],
+	'black': [45, 52, 54]
 };
 
 //------------------------------------------------------------------------------
@@ -78,6 +80,7 @@ class NoteOptionsMenu {
 			can_focus: false
 		});
 		this._addColorButton('red', 1);
+		this._addColorButton('orange', 1);
 		this._addColorButton('green', 1);
 		this._addColorButton('blue', 1);
 		this._addColorButton('black', 1);
@@ -91,7 +94,8 @@ class NoteOptionsMenu {
 			can_focus: false
 		});
 		this._addColorButton('cyan', 2);
-		this._addColorButton('magenta', 2);
+		this._addColorButton('pink', 2);
+		this._addColorButton('purple', 2);
 		this._addColorButton('yellow', 2);
 		this._addColorButton('white', 2);
 		this.super_menu.addMenuItem(this.color2_item);
