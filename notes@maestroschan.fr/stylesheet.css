@@ -5,10 +5,6 @@
 	margin: 0px;
 }
 
-.noteBoxStyle:hover {
-	box-shadow: 0px 0px 10px #000;
-}
-
 .notesTextField {
 	border-width: 0px;
 	border-radius: 0px;
